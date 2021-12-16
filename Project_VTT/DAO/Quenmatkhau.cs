@@ -16,5 +16,10 @@ namespace Project_VTT.DAO
         {
             InitializeComponent();
         }
+
+        private void Quenmatkhau_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

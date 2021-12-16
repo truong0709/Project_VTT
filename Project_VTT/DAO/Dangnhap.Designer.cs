@@ -31,7 +31,7 @@ namespace Project_VTT
         {
             this.lbl_Quenmk = new System.Windows.Forms.LinkLabel();
             this.lbl_Dangky = new System.Windows.Forms.LinkLabel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Dangnhap = new System.Windows.Forms.Button();
             this.tbx_Tentk = new System.Windows.Forms.TextBox();
             this.tbx_Matkhau = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -51,6 +51,7 @@ namespace Project_VTT
             this.lbl_Quenmk.TabIndex = 3;
             this.lbl_Quenmk.TabStop = true;
             this.lbl_Quenmk.Text = "Quên mật khẩu";
+            this.lbl_Quenmk.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbl_Quenmk_LinkClicked);
             // 
             // lbl_Dangky
             // 
@@ -62,17 +63,18 @@ namespace Project_VTT
             this.lbl_Dangky.TabStop = true;
             this.lbl_Dangky.Text = "Đăng Ký";
             // 
-            // button1
+            // btn_Dangnhap
             // 
-            this.button1.AutoSize = true;
-            this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(252, 426);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 48);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Đăng nhập";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_Dangnhap.AutoSize = true;
+            this.btn_Dangnhap.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btn_Dangnhap.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btn_Dangnhap.Location = new System.Drawing.Point(252, 426);
+            this.btn_Dangnhap.Name = "btn_Dangnhap";
+            this.btn_Dangnhap.Size = new System.Drawing.Size(88, 48);
+            this.btn_Dangnhap.TabIndex = 5;
+            this.btn_Dangnhap.Text = "Đăng nhập";
+            this.btn_Dangnhap.UseVisualStyleBackColor = false;
+            this.btn_Dangnhap.Click += new System.EventHandler(this.button1_Click);
             // 
             // tbx_Tentk
             // 
@@ -125,7 +127,7 @@ namespace Project_VTT
             this.ClientSize = new System.Drawing.Size(592, 508);
             this.Controls.Add(this.tbx_Matkhau);
             this.Controls.Add(this.tbx_Tentk);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Dangnhap);
             this.Controls.Add(this.lbl_Dangky);
             this.Controls.Add(this.lbl_Quenmk);
             this.Controls.Add(this.pictureBox3);
@@ -149,7 +151,7 @@ namespace Project_VTT
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.LinkLabel lbl_Quenmk;
         private System.Windows.Forms.LinkLabel lbl_Dangky;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Dangnhap;
         private System.Windows.Forms.TextBox tbx_Tentk;
         private System.Windows.Forms.TextBox tbx_Matkhau;
     }

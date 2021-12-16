@@ -16,5 +16,10 @@ namespace Project_VTT.DAO
         {
             InitializeComponent();
         }
+
+        private void btn_Dangky_Click(object sender, EventArgs e)
+        {
+            Dangky
+        }
     }
 }

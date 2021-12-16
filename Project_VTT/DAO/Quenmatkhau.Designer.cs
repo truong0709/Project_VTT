@@ -143,6 +143,7 @@ namespace Project_VTT.DAO
             this.Controls.Add(this.pictureBox1);
             this.Name = "Quenmatkhau";
             this.Text = "Quên Mật Khẩu";
+            this.Load += new System.EventHandler(this.Quenmatkhau_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -107,6 +107,7 @@ namespace Project_VTT.DAO
             this.btn_Dangky.TabIndex = 10;
             this.btn_Dangky.Text = "Đăng ký";
             this.btn_Dangky.UseVisualStyleBackColor = false;
+            this.btn_Dangky.Click += new System.EventHandler(this.btn_Dangky_Click);
             // 
             // pictureBox1
             // 

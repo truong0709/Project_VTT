@@ -19,7 +19,12 @@ namespace Project_VTT
 
         private void Dangnhap_Load(object sender, EventArgs e)
         {
+           
+        }
 
+        private void lbl_Quenmk_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Dangnhap
         }
     }
 }
