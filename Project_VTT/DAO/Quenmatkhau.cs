@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Project_VTT
+namespace Project_VTT.DAO
 {
-    public partial class Dangnhap : Form
+    public partial class Quenmatkhau : Form
     {
-        public Dangnhap()
+        public Quenmatkhau()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
